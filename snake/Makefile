@@ -6,7 +6,7 @@ TARGET = main
 SOURCES = main.c
 
 $(TARGET): $(SOURCES)
-	$(CC) $(SOURCES) -o $(TARGET) $(LDFLAGS) $(CFLAGS)
+	$(CC) $(CFLAGS) $(SOURCES) -o $(TARGET) $(LDFLAGS)
 
 clean:
 	rm -f $(TARGET)
