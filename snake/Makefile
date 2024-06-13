@@ -1,9 +1,9 @@
-CC = gcc
+CC = g++
 CFLAGS = -Wall -g
 LDFLAGS = -lGL -lGLEW -lglfw -lm
 
 TARGET = main
-SOURCES = main.c
+SOURCES = main.cpp
 
 $(TARGET): $(SOURCES)
 	$(CC) $(CFLAGS) $(SOURCES) -o $(TARGET) $(LDFLAGS)
